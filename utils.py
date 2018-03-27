@@ -31,7 +31,7 @@ def gather_eye_data(path, eye='right'):
     return indices, images, poses, gazes
 
 
-def gather_data(path):
+def gather_all_data(path):
     
     mat_files = glob.glob(f'{path}/**/*.mat', recursive=True)
     mat_files.sort()
